@@ -1,0 +1,36 @@
+{
+  "name": "mehr-it/eli_dispatcher",
+  "description": "Flexible and lightweight request dispatcher (and emitter) for PHP applications based on PSR-7 and PSR-15 standards",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Christopher Mieger",
+      "email": "mail@mehr-it.info"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MehrIt\\EliDispatcher\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MehrItEliDispatcherTest\\": "test/"
+    }
+  },
+  "require": {
+    "php": ">=7.1.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/http-server-middleware": "^1.0",
+    "dflydev/fig-cookies": "1.0.x-dev",
+    "nyholm/psr7": "^1.0@dev",
+    "nyholm/psr7-server": "dev-master",
+    "narrowspark/http-emitter": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "7.5.x-dev",
+    "symfony/process": "^4.3@dev",
+    "guzzle/guzzle": "^3.9@dev"
+  }
+}
